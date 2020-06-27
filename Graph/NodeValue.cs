@@ -18,13 +18,13 @@ namespace Graph
         {
             if (a.Contains('+'))
             {
-                moves = moves + a;
+                moves += a;
                 numberOfMove++;
                 numberOfStones += Convert.ToInt32(a.Substring(1));
             }
             else if (a.Contains('*'))
             {
-                moves = moves + a;
+                moves += a;
                 numberOfMove++;
                 numberOfStones *= Convert.ToInt32(a.Substring(1));
             }
